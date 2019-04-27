@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Calculators"
+    tools:showIn="@layout/activity_calculators">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_your_BMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/calculate_BMI"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="32dp" />
+
+            <TextView
+                android:id="@+id/text_weight_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <EditText
+                android:id="@+id/edit_weight_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:ems="10"
+                android:hint="@string/enter_weight"
+                android:importantForAutofill="no"
+                android:inputType="number|numberDecimal"
+                tools:layout_editor_absoluteX="227dp"
+                tools:layout_editor_absoluteY="47dp" />
+
+            <TextView
+                android:id="@+id/text_height_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <EditText
+                android:id="@+id/edit_height_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:ems="10"
+                android:hint="@string/enter_height"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="227dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+            <Button
+                android:id="@+id/button_calculate_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate" />
+
+            <TextView
+                android:id="@+id/text_show_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

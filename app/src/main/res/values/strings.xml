@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fit Spirit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calculators">Calculators</string>
+    <string name="BMI">"BMI"</string>
+    <string name="calculate_BMI">"Oblicz swoje BMI: "</string>
+    <string name="weight">"Waga: "</string>
+    <string name="height">"Wzrost: "</string>
+    <string name="calculate">"OBLICZ"</string>
+    <string name="enter_weight">"Podaj swoją wagę (w kg): "</string>
+    <string name="enter_height">"Podaj swój wzrost (w cm): "</string>
+    <string name="your_BMI">"Twoje BMI wynosi: "</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
