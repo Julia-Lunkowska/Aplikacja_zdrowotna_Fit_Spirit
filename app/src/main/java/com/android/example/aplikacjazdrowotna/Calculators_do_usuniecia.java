@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.Objects;
 
-public class Calculators extends AppCompatActivity {
+public class Calculators_do_usuniecia extends AppCompatActivity {
 
     TextView text_bmi_weight, text_bmi_height, text_your_BMI, text_show_bmi;
     EditText edit_bmi_weight, edit_bmi_height;
@@ -22,8 +22,6 @@ public class Calculators extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculators);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         text_bmi_weight = findViewById(R.id.text_weight_bmi);
         text_bmi_height = findViewById(R.id.text_height_bmi);
@@ -40,16 +38,6 @@ public class Calculators extends AppCompatActivity {
 
         });
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-// zmieniona metoda!!
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     public void calculateBMI (){

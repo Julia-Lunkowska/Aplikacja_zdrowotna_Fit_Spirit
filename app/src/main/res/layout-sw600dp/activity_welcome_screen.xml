@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
+    android:background="#b8e3a3"
     android:gravity="center"
-    android:theme="@style/AppTheme.AllLight"
-    tools:context=".WelcomeScreen"
-    >
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".WelcomeScreen">
 
     <ImageView
         android:id="@+id/welcome_logo"
         android:layout_width="250dp"
         android:layout_height="268dp"
+        android:baselineAligned="false"
         android:src="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
@@ -21,9 +21,9 @@
         android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:baselineAligned="false"
         android:text="@string/welcome_text"
-        android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold" />
 </LinearLayout>

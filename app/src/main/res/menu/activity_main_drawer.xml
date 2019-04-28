@@ -18,8 +18,9 @@
             android:icon="@drawable/ic_goal"
             android:title="Cele" />
         <item
-            android:id="@+id/nav_manage"
-            android:title="Cokolwiek" />
+            android:id="@+id/tabels"
+            android:icon="@drawable/table"
+            android:title="Tabele" />
     </group>
     <item android:title="Communicate">
         <menu>

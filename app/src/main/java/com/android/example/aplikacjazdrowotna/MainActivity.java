@@ -87,10 +87,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         switch(id){
+            case R.id.tabels:
+                Intent intent = new Intent(MainActivity.this, Tabels.class);
+                startActivity(intent);
+                break;
 
             case R.id.calculators:
-                Intent intent = new Intent(MainActivity.this, Calculators.class);
-                startActivity(intent);
+                Intent i = new Intent(MainActivity.this, Calculator.class);
+                startActivity(i);
                 break;
         }
 
