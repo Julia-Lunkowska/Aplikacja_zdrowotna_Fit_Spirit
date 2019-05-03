@@ -14,7 +14,9 @@
         <activity
             android:name=".Tabels"
             android:label="@string/title_activity_tabels"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity
             android:name=".Calculators"
             android:label="@string/title_activity_calculator"
@@ -27,7 +29,6 @@
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

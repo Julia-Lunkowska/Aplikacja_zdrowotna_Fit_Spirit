@@ -12,16 +12,14 @@ import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private ImageView welcome_logo;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome_screen);
-        TextView text_welcome = findViewById(R.id.text_welcome);
-        welcome_logo= findViewById(R.id.welcome_logo);
+        setContentView(R.layout.activity_splash_screen);
 
-        // hide the status and action bar
+        TextView text_welcome = findViewById(R.id.text_welcome);
+        ImageView welcome_logo= findViewById(R.id.welcome_logo);
+
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
