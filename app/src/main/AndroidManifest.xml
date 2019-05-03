@@ -16,7 +16,7 @@
             android:label="@string/title_activity_tabels"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Calculator"
+            android:name=".Calculators"
             android:label="@string/title_activity_calculator"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -24,16 +24,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.android.example.aplikacjazdrowotna.MainActivity" />
         </activity>
-        <activity
-            android:name=".Calculators_do_usuniecia"
-            android:label="@string/title_activity_calculators"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.android.example.aplikacjazdrowotna.MainActivity" />
-        </activity>
-        <activity android:name=".WelcomeScreen">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:theme="@style/AppTheme.AllLight"
-    tools:context=".WelcomeScreen"
+    tools:context=".SplashScreen"
     >
 
     <ImageView

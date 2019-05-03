@@ -4,21 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".BMI_fragment">
+    tools:context=".WHR_fragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/text_your_BMI"
+            android:id="@+id/text_your_WHR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/calculate_BMI"
+            android:text="@string/calculate_WHR"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,60 +26,84 @@
             tools:layout_editor_absoluteX="32dp" />
 
         <TextView
-            android:id="@+id/text_weight_bmi"
+            android:id="@+id/text_waist_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/weight"
+            android:text="@string/waist"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="70dp" />
 
         <EditText
-            android:id="@+id/edit_weight_bmi"
+            android:id="@+id/edit_waist_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#f0f0f0"
             android:ems="10"
-            android:hint="@string/enter_weight"
+            android:hint="@string/enter_waist"
             android:inputType="number|numberDecimal"
             tools:layout_editor_absoluteX="227dp"
             tools:layout_editor_absoluteY="47dp" />
 
         <TextView
-            android:id="@+id/text_height_bmi"
+            android:id="@+id/text_hip_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/height"
+            android:text="@string/hip"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="129dp" />
 
         <EditText
-            android:id="@+id/edit_height_bmi"
+            android:id="@+id/edit_hip_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#f0f0f0"
             android:ems="10"
-            android:hint="@string/enter_height"
+            android:hint="@string/enter_hip"
             android:inputType="number"
             tools:layout_editor_absoluteX="227dp"
             tools:layout_editor_absoluteY="101dp" />
 
-        <Button
-            android:id="@+id/button_calculate_bmi"
-            android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/text_whr_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_sex" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_whr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton_whr_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/woman" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_whr_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/man" />
+            </RadioGroup>
+
+            <Button
+            android:id="@+id/button_calculate_whr"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calculate" />
 
-        <TextView
-            android:id="@+id/text_show_bmi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:maxLines="3"
-            android:text=""
-            android:textStyle="bold" />
-
+            <TextView
+                android:id="@+id/text_show_whr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text=""
+                android:textStyle="bold" />
     </LinearLayout>
-
 </android.support.design.widget.CoordinatorLayout>

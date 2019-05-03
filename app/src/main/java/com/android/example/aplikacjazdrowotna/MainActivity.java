@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.calculators:
-                Intent i = new Intent(MainActivity.this, Calculator.class);
+                Intent i = new Intent(MainActivity.this, Calculators.class);
                 startActivity(i);
                 break;
         }

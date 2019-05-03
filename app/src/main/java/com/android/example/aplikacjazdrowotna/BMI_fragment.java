@@ -2,8 +2,6 @@ package com.android.example.aplikacjazdrowotna;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.Objects;
 
 public class BMI_fragment extends Fragment {
 
@@ -44,16 +41,6 @@ public class BMI_fragment extends Fragment {
         }
         );
 
-        FloatingActionButton fab = view.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-       // Objects.requireNonNull(((AppCompatActivity)getActivity()).getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         return view;
     }
 
@@ -65,28 +52,28 @@ public class BMI_fragment extends Fragment {
         String description;
 
         if (BMI < 16) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to wygłodzenie.";
+            description = "Twoje BMI wynosi: " + BMI + "."+ System.lineSeparator()+ "Oznacza to wygłodzenie.";
             text_show_bmi.setText(description);
         } else if (BMI >= 16 && BMI <= 16.99) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to wychudzenie.";
+            description = "Twoje BMI wynosi: " + BMI + "." + System.lineSeparator() +"Oznacza to wychudzenie.";
             text_show_bmi.setText(description);
         } else if (BMI >= 17 && BMI <= 18.49) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to niedowagę.";
+            description = "Twoje BMI wynosi: " + BMI +"."+ System.lineSeparator()+ "Oznacza to niedowagę.";
             text_show_bmi.setText(description);
         } else if (BMI >= 18.50 && BMI <= 24.99) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to prawidłową wagę.";
+            description = "Twoje BMI wynosi: " + BMI + "."+System.lineSeparator() + "Oznacza to prawidłową wagę.";
             text_show_bmi.setText(description);
         } else if (BMI >= 25 && BMI <= 29.99) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to nadwagę.";
+            description = "Twoje BMI wynosi: " + BMI + "."+System.lineSeparator() + "Oznacza to nadwagę.";
             text_show_bmi.setText(description);
         } else if (BMI >= 30 && BMI <= 34.99) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to otyłość I stopnia.";
+            description = "Twoje BMI wynosi: " + BMI +"."+ System.lineSeparator()+ "Oznacza to otyłość I stopnia.";
             text_show_bmi.setText(description);
         } else if (BMI >= 35 && BMI <= 39.99) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to otyłość II stopnia.";
+            description = "Twoje BMI wynosi: " + BMI + "."+System.lineSeparator() + "Oznacza to otyłość II stopnia.";
             text_show_bmi.setText(description);
         } else if (BMI >= 40) {
-            description = "Twoje BMI wynosi: " + BMI + ". \nOznacza to skrajną otyłość.";
+            description = "Twoje BMI wynosi: " + BMI +"."+ System.lineSeparator() +"Oznacza to skrajną otyłość.";
             text_show_bmi.setText(description);
         }
 
