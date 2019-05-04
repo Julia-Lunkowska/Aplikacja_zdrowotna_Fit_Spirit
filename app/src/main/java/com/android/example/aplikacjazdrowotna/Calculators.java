@@ -1,11 +1,15 @@
 package com.android.example.aplikacjazdrowotna;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.View;
 
-public class Calculators extends AppCompatActivity {
+
+public class Calculators extends Navigation_Drawer {
 
     SectionPageAdapter mSectionPageAdapter;
 
@@ -13,6 +17,11 @@ public class Calculators extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculators);
+        super.onCreateDrawer();
+
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View ContentView = inflater.inflate(R.layout.activity_calculators,null, false);
+        drawer.addView(ContentView, 0);
 
         mSectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
 
@@ -29,4 +38,7 @@ public class Calculators extends AppCompatActivity {
         adapter.addFragment(new WHR_fragment(), "Waist/Hip Ratio");
         viewPager.setAdapter(adapter);
     }
+
+
 }
+

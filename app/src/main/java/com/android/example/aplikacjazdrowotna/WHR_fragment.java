@@ -56,12 +56,27 @@ public class WHR_fragment extends Fragment {
         float hip = Float.parseFloat(edit_whr_hip.getText().toString());
         float waist = Float.parseFloat(edit_whr_waist.getText().toString());
 
+
         float WHR = waist /hip;
         WHR = Math.round(WHR);
         String description;
 
 
 
+
+        }
+
+        public String checkButton(View v) {
+            int radioId = radioGroup_whr.getCheckedRadioButtonId();
+  //          RadioButton radioButton = (RadioButton)findViewById(radioId);
+            String sex = "";
+
+     //       if (radioButton == radio_whr_man) {
+     //           sex="M";
+      //      } else if (radioButton == radio_whr_woman) {
+      //          sex="K";
+      //      }
+            return sex;
         }
 
 
