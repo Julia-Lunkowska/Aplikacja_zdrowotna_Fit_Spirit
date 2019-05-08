@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WHR_fragment">
 
     <LinearLayout
@@ -14,11 +14,20 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="20"
+            android:text="@string/text_description_whr" />
+
+        <TextView
             android:id="@+id/text_your_WHR"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/calculate_WHR"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:textStyle="bold"
@@ -39,6 +48,7 @@
             android:id="@+id/edit_waist_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="#f0f0f0"
             android:ems="10"
             android:hint="@string/enter_waist"
@@ -60,6 +70,7 @@
             android:id="@+id/edit_hip_whr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="#f0f0f0"
             android:ems="10"
             android:hint="@string/enter_hip"
@@ -84,15 +95,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="checkButton"
                 android:text="@string/man" />
 
             <RadioButton
                 android:id="@+id/radioButton_whr_woman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:layout_weight="1"
-                android:onClick="checkButton"
                 android:text="@string/woman" />
 
         </RadioGroup>
@@ -101,15 +111,16 @@
             android:id="@+id/button_calculate_whr"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
             android:text="@string/calculate" />
 
         <TextView
             android:id="@+id/text_show_whr"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:maxLines="3"
+            android:maxLines="5"
             android:text=""
             android:textStyle="bold" />
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</ScrollView>
