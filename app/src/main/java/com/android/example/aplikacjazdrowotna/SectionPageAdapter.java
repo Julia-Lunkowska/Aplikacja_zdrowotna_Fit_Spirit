@@ -16,7 +16,7 @@ public class SectionPageAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
-    public void addFragment (Fragment fragment, String title){
+    public void addFragment(Fragment fragment, String title) {
         mFragmentList.add(fragment);
         mFragmentTitleList.add(title);
     }
@@ -27,7 +27,7 @@ public class SectionPageAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public CharSequence getPageTitle(int position){
+    public CharSequence getPageTitle(int position) {
         return mFragmentTitleList.get(position);
     }
 

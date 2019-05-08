@@ -7,13 +7,16 @@ import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 
-public class MainActivity extends Navigation_Drawer {
+public class MainActivity extends NavigationDrawer {
+
+    DatabaseFood foodDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         super.onCreateDrawer();
+        foodDb = new DatabaseFood(this);
 
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View ContentView = inflater.inflate(R.layout.activity_main, null, false);

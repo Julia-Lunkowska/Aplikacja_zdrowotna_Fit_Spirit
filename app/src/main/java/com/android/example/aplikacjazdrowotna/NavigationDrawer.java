@@ -11,10 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Navigation_Drawer extends AppCompatActivity {
+public class NavigationDrawer extends AppCompatActivity {
 
-    NavigationView navigationView;
     protected DrawerLayout drawer;
+    NavigationView navigationView;
 
     protected void onCreateDrawer() {
         setContentView(R.layout.activity_navigation_drawer);

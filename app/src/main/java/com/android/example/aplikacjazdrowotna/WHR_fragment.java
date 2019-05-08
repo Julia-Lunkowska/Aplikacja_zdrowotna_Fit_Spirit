@@ -14,8 +14,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
-
 public class WHR_fragment extends Fragment {
 
     TextView text_whr_waist, text_whr_hip, text_your_WHR, text_show_whr, text_whr_sex, text_description;
@@ -36,7 +34,7 @@ public class WHR_fragment extends Fragment {
         text_your_WHR = view.findViewById(R.id.text_your_WHR);
         text_show_whr = view.findViewById(R.id.text_show_whr);
         text_whr_sex = view.findViewById(R.id.text_whr_sex);
-        text_description = view.findViewById(R.id.text_description);
+        text_description = view.findViewById(R.id.text_description_whr);
         edit_whr_hip = view.findViewById(R.id.edit_hip_whr);
         edit_whr_waist = view.findViewById(R.id.edit_waist_whr);
         button_calculate_whr = view.findViewById(R.id.button_calculate_whr);

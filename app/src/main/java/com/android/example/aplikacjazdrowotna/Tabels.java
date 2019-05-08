@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 
-public class Tabels extends Navigation_Drawer {
+public class Tabels extends NavigationDrawer {
 
     SectionPageAdapter mSectionPageAdapter;
 
@@ -37,8 +37,8 @@ public class Tabels extends Navigation_Drawer {
     private void setupViewPager(ViewPager viewPager) {
         SectionPageAdapter adapter = new SectionPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new IG_fragment(), "Indeks glikemiczny");
-   //     adapter.addFragment(new WHR_fragment(), "Waist/Hip Ratio");
+        //     adapter.addFragment(new WHR_fragment(), "Waist/Hip Ratio");
         viewPager.setAdapter(adapter);
     }
 
-    }
+}

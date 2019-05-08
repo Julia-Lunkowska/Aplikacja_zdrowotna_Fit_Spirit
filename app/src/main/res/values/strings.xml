@@ -28,8 +28,11 @@
     <string name="title_activity_calculator">Kalkulatory</string>
     <string name="title_activity_tabels">Tabele</string>
     <string name="text_description_whr">Wskaźnik WHR określa sposób dystrybucji w organizmie tkanki tłuszczowej.
-        Wskazuje typ otyłości - brzusznej lub pośladkowo-udowej. UWAGA! Nie powinno się go stosować w przypadku
+        Wskazuje typ otyłości - brzusznej lub pośladkowo-udowej. \n\nUWAGA!\n Nie powinno się go stosować w przypadku
         poprawnej wartości BMI oraz u kobiet w ciąży.</string>
+    <string name="text_description_bmi">Wskaźnik BMI pozwala oszacować prawidłowość masy ciała.\n\n UWAGA!\n
+    Parametr BMI nie nadaje się do określania masy ciała u osób z dużą ilością tkanki mięśniowej, dzieci do 14 roku życia
+    oraz kobiet w ciąży. </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

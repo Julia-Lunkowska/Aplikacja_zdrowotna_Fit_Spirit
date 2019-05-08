@@ -3,10 +3,8 @@ package com.android.example.aplikacjazdrowotna;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +15,7 @@ import android.widget.TextView;
 
 public class BMI_fragment extends Fragment {
 
-    TextView text_bmi_weight, text_bmi_height, text_your_BMI, text_show_bmi;
+    TextView text_bmi_weight, text_bmi_height, text_your_BMI, text_show_bmi, text_description_bmi;
     EditText edit_bmi_weight, edit_bmi_height;
     Button button_calculate_bmi;
 
@@ -32,6 +30,7 @@ public class BMI_fragment extends Fragment {
         text_bmi_height = view.findViewById(R.id.text_height_bmi);
         text_your_BMI = view.findViewById(R.id.text_your_BMI);
         text_show_bmi = view.findViewById(R.id.text_show_bmi);
+        text_description_bmi = view.findViewById(R.id.text_description_bmi);
         edit_bmi_height = view.findViewById(R.id.edit_height_bmi);
         edit_bmi_weight = view.findViewById(R.id.edit_weight_bmi);
         button_calculate_bmi = view.findViewById(R.id.button_calculate_bmi);
@@ -47,9 +46,9 @@ public class BMI_fragment extends Fragment {
     }
 
     public void calculateBMI() {
-            Float height = Float.parseFloat(edit_bmi_height.getText().toString()) / 100;
-            Float weight = Float.parseFloat(edit_bmi_weight.getText().toString());
-            Float BMI = weight / (height * height);
+        Float height = Float.parseFloat(edit_bmi_height.getText().toString()) / 100;
+        Float weight = Float.parseFloat(edit_bmi_weight.getText().toString());
+        Float BMI = weight / (height * height);
 
         String description;
 
