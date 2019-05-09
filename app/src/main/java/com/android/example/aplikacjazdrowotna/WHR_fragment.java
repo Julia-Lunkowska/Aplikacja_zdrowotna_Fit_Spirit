@@ -49,7 +49,6 @@ public class WHR_fragment extends Fragment {
                                                     }
                                                 }
         );
-
         return view;
     }
 

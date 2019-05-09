@@ -33,8 +33,9 @@ public class Calculators extends NavigationDrawer {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionPageAdapter adapter = new SectionPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new BMI_fragment(), "Body Mass Index");
-        adapter.addFragment(new WHR_fragment(), "Waist/Hip Ratio");
+        adapter.addFragment(new BMI_fragment(), "Indeks masy ciała - BMI");
+        adapter.addFragment(new WHR_fragment(), "Wskaźnik talia/biodra - WHR");
+        adapter.addFragment(new GL_fragment(), "Ładunek gliemiczny - GL");
         viewPager.setAdapter(adapter);
     }
 

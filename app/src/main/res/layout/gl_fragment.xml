@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WHR_fragment">
+    tools:context=".GL_fragment">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/text_description_whr"
+                android:id="@+id/text_description_gl"
                 android:layout_width="296dp"
                 android:layout_height="192dp"
                 android:layout_marginStart="10dp"
@@ -26,15 +26,15 @@
                 android:gravity="center"
                 android:maxLines="20"
                 android:paddingTop="10dp"
-                android:text="@string/text_description_whr" />
+                android:text="@string/text_description_gl" />
 
             <TextView
-                android:id="@+id/text_your_WHR"
+                android:id="@+id/text_calculate_GL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/calculate_WHR"
+                android:text="@string/calculate_gl"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
@@ -42,29 +42,21 @@
                 tools:layout_editor_absoluteX="32dp" />
 
             <TextView
-                android:id="@+id/text_waist_whr"
+                android:id="@+id/text_product_gl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/waist"
+                android:text="@string/product"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="165dp"
                 tools:layout_editor_absoluteY="70dp" />
 
-            <EditText
-                android:id="@+id/edit_waist_whr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:background="#f0f0f0"
-                android:ems="10"
-                android:hint="@string/enter_waist"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                tools:ignore="UnusedAttribute"
-                tools:layout_editor_absoluteX="227dp" />
+            <Spinner
+                android:id="@+id/spinner_gl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/text_hip_whr"
+                android:id="@+id/text_portion_gl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/size_of_portion"
@@ -73,57 +65,28 @@
                 tools:layout_editor_absoluteY="129dp" />
 
             <EditText
-                android:id="@+id/edit_hip_whr"
+                android:id="@+id/edit_portion_gl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:background="#f0f0f0"
                 android:ems="10"
-                android:hint="@string/enter_hip"
+                android:hint="@string/enter_size_of_portion"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 tools:ignore="UnusedAttribute"
                 tools:layout_editor_absoluteX="227dp"
                 tools:layout_editor_absoluteY="101dp" />
 
-            <TextView
-                android:id="@+id/text_whr_sex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/enter_sex" />
-
-            <RadioGroup
-                android:id="@+id/radioGroup_whr"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="start">
-
-                <RadioButton
-                    android:id="@+id/radioButton_whr_man"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/man" />
-
-                <RadioButton
-                    android:id="@+id/radioButton_whr_woman"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:layout_weight="1"
-                    android:text="@string/woman" />
-
-            </RadioGroup>
-
             <Button
-                android:id="@+id/button_calculate_whr"
+                android:id="@+id/button_calculate_gl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:text="@string/calculate" />
 
             <TextView
-                android:id="@+id/text_show_whr"
+                android:id="@+id/text_show_gl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -132,4 +95,4 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-    </ScrollView>
+</ScrollView>

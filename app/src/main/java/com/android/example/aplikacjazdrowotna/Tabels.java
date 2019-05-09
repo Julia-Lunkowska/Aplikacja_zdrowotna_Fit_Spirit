@@ -36,7 +36,7 @@ public class Tabels extends NavigationDrawer {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionPageAdapter adapter = new SectionPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new IG_fragment(), "Indeks glikemiczny");
+        adapter.addFragment(new GL_fragment(), "Indeks glikemiczny");
         //     adapter.addFragment(new WHR_fragment(), "Waist/Hip Ratio");
         viewPager.setAdapter(adapter);
     }

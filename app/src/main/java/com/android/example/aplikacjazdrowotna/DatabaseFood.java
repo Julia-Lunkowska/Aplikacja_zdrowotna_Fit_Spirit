@@ -9,7 +9,7 @@ public class DatabaseFood extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "Food.db";
     public static final String TABLE_NAME = "Macronutrient_table";
-    public static final String COL_1 = "ID"
+    public static final String COL_1 = "ID";
     public static final String COL_2 = "NAME";
     public static final String COL_3 = "PROTEIN(G)";
     public static final String COL_4 = "CARBOHYDRATES(G)";

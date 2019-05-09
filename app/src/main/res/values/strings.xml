@@ -33,8 +33,12 @@
     <string name="text_description_bmi">Wskaźnik BMI pozwala oszacować prawidłowość masy ciała.\n\n UWAGA!\n
     Parametr BMI nie nadaje się do określania masy ciała u osób z dużą ilością tkanki mięśniowej, dzieci do 14 roku życia
     oraz kobiet w ciąży. </string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_description_gl">Ładunek glikemiczny jest wartością określającą wpływ spożycia danej porcji żywności
+    na poziom cukru we krwi. Uwzględnia on nie tylko rodzaj węglowodanów i szybkość wchłaniania, ale również ich
+    ilość. Z tego powodu jest wskaźnikiem bardziej dokładnym niż stosowany powszechnie indeks glikemiczny (IG).</string>
+    <string name="calculate_gl">Oblicz ładunek glikemiczny: </string>
+    <string name="product">Produkt: </string>
+   <string name="size_of_portion">Wielkość porcji: </string>
+    <string name="enter_size_of_portion">Podaj wielkość porcji(g): </string>
 
 </resources>
